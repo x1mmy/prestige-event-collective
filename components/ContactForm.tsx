@@ -126,11 +126,12 @@ export function ContactForm() {
                   id="phone"
                   name="phone"
                   placeholder="0400 000 000"
+                  required
                 />
               </div>
               <div className="form-group">
                 <label htmlFor="service">Service</label>
-                <select id="service" name="service">
+                <select id="service" name="service" required>
                   {SERVICE_OPTIONS.map((opt) => (
                     <option key={opt || "empty"} value={opt}>
                       {opt || "Select..."}
@@ -145,6 +146,7 @@ export function ContactForm() {
                   id="job_location"
                   name="job_location"
                   placeholder="e.g. Sydney CBD"
+                  required
                 />
               </div>
               <div className="form-group">
@@ -154,12 +156,13 @@ export function ContactForm() {
                   id="time_required"
                   name="time_required"
                   placeholder="e.g. 4 hours"
+                  required
                 />
               </div>
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="event_date">Event date</label>
-                  <input type="date" id="event_date" name="event_date" />
+                  <input type="date" id="event_date" name="event_date" required />
                 </div>
                 <div className="form-group">
                   <label htmlFor="type_of_event">Type of event</label>

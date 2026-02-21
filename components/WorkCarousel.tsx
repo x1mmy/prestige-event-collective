@@ -17,6 +17,21 @@ export function WorkCarousel() {
   const isDown = useRef(false);
   const startX = useRef(0);
   const scrollLeft = useRef(0);
+  const [useHoverPlay, setUseHoverPlay] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mqHover = window.matchMedia("(hover: hover)");
+    const mqNarrow = window.matchMedia("(max-width: 768px)");
+    const update = () => setUseHoverPlay(mqHover.matches && !mqNarrow.matches);
+    update();
+    mqHover.addEventListener("change", update);
+    mqNarrow.addEventListener("change", update);
+    return () => {
+      mqHover.removeEventListener("change", update);
+      mqNarrow.removeEventListener("change", update);
+    };
+  }, []);
 
   useEffect(() => {
     const track = trackRef.current;
@@ -90,9 +105,9 @@ export function WorkCarousel() {
             <div
               key={i}
               className="carousel-slide"
-              data-cursor-hover
-              onMouseEnter={() => handleSlideEnter(i)}
-              onMouseLeave={() => handleSlideLeave(i)}
+              data-cursor-hover={useHoverPlay ? true : undefined}
+              onMouseEnter={useHoverPlay ? () => handleSlideEnter(i) : undefined}
+              onMouseLeave={useHoverPlay ? () => handleSlideLeave(i) : undefined}
             >
               <video
                 ref={(el) => {

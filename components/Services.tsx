@@ -33,12 +33,12 @@ const CARDS = [
   {
     Icon: HeartIcon,
     title: "Weddings",
-    text: "Setting the perfect soundtrack for your special day. From emotional ceremony moments to high-energy reception dancing, we read the room and curate the perfect musical journey — ensuring every song reflects your love story and keeps the dance floor packed all night.",
+    text: "Setting the perfect soundtrack for your special day. From emotional ceremony moments to high-energy reception dancing, we read the room and curate the perfect musical journey, ensuring every song reflects your love story and keeps the dance floor packed all night.",
   },
   {
     Icon: BriefcaseIcon,
     title: "Corporate",
-    text: "Elevating professional gatherings with sophisticated entertainment. Whether it's conferences, product launches, or company celebrations, we provide the right energy and ambiance — from background music to full DJ sets that engage your audience and strengthen your brand presence.",
+    text: "Elevating professional gatherings with sophisticated entertainment. Whether it's conferences, product launches, or company celebrations, we provide the right energy and ambiance, from background music to full DJ sets that engage your audience and strengthen your brand presence.",
   },
   {
     Icon: EngagementRingIcon,
@@ -48,7 +48,7 @@ const CARDS = [
   {
     Icon: MusicNoteIcon,
     title: "Private Events",
-    text: "Bringing the party to life's special celebrations. Milestone birthdays, anniversaries, or family reunions — we deliver high-energy DJ sets tailored to your crowd, reading the room and keeping guests of all ages entertained and dancing all night long.",
+    text: "Bringing the party to life's special celebrations. Milestone birthdays, anniversaries, or family reunions: we deliver high-energy DJ sets tailored to your crowd, reading the room and keeping guests of all ages entertained and dancing all night long.",
   },
 ];
 
@@ -61,7 +61,9 @@ export function Services() {
             <h2>Services</h2>
             <p>
               Premium DJ entertainment that transforms weddings, corporate events,
-              and celebrations into unforgettable experiences.
+              and celebrations into unforgettable experiences. From ceremony to
+              dance floor, we read the room and curate the perfect soundtrack
+              for every moment.
             </p>
           </div>
           <div className="section-header-image">
