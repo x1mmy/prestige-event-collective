@@ -562,6 +562,20 @@ body.using-mouse {
   padding: 48px 48px 40px;
 }
 
+.gallery-header {
+  padding: 0 48px 20px;
+  margin-bottom: 32px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.gallery-header h2 {
+  font-size: clamp(48px, 5vw, 72px);
+  font-weight: 300;
+}
+
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1458,6 +1472,11 @@ body.using-mouse {
 
   .gallery-section {
     padding: 32px 24px;
+  }
+
+  .gallery-header {
+    padding: 0 24px 20px;
+    margin-bottom: 24px;
   }
 
   .photo-grid {

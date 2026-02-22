@@ -1,19 +1,19 @@
 const TESTIMONIALS = [
   {
     quote:
-      "Working with Prestige Events Collective was a once-in-a-lifetime experience. Their ability to merge creativity with technical precision not only impressed our guests but ensured every moment was perfect all night.",
+      "Working with Prestige Event Collective was a once-in-a-lifetime experience. Their ability to merge creativity with technical precision not only impressed our guests but ensured every moment was perfect all night.",
     rating: "5.0",
     event: "Private Event",
   },
   {
     quote:
-      "We hired Prestige Events Collective for our wedding reception, and Isaac was phenomenal. He read the crowd perfectly, transitioning between genres seamlessly while maintaining the energy throughout the night. Worth every dollar!",
+      "We hired Prestige Event Collective for our wedding reception, and Isaac was phenomenal. He read the crowd perfectly, transitioning between genres seamlessly while maintaining the energy throughout the night. Worth every dollar!",
     rating: "5.0",
     event: "Wedding Reception",
   },
   {
     quote:
-      "Prestige Events Collective brought our vision to life. The strategic approach to music and atmosphere elevated our product launch beyond expectations. Professional setup, flawless execution and the team was incredibly responsive throughout the planning process.",
+      "Prestige Event Collective brought our vision to life. The strategic approach to music and atmosphere elevated our product launch beyond expectations. Professional setup, flawless execution and the team was incredibly responsive throughout the planning process.",
     rating: "5.0",
     event: "Corporate Launch",
   },

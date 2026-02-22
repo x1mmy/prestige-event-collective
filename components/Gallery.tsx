@@ -32,7 +32,10 @@ export function Gallery() {
   };
 
   return (
-    <section id="gallery" className="gallery-section">
+    <section id="gallery" className="gallery-section" aria-label="Gallery">
+      <div className="gallery-header reveal">
+        <h2>Gallery</h2>
+      </div>
       <div className="photo-grid">
         {GALLERY_IMAGES.map((src, i) => (
           <div
