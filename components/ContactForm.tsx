@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { MARQUEE_ITEMS } from "./Services";
 
-const SERVICE_OPTIONS = [
+const FORM_SERVICE_LABELS = [
   "",
   "DJ",
   "MCs & Hosts",
@@ -20,6 +21,19 @@ const SERVICE_OPTIONS = [
   "Full Event Production",
   "Other",
 ];
+
+const labelToEmoji: Record<string, string> = {
+  "": "",
+  "DJ": "🎧",
+  "Neon Signs & more": "💡",
+  "Other": "📋",
+  ...Object.fromEntries(MARQUEE_ITEMS.map(({ label, emoji }) => [label, emoji])),
+};
+
+const SERVICE_OPTIONS = FORM_SERVICE_LABELS.map((value) => ({
+  value,
+  emoji: labelToEmoji[value] ?? "",
+}));
 
 const EVENT_TYPES = [
   "",
@@ -133,8 +147,8 @@ export function ContactForm() {
                 <label htmlFor="service">Service</label>
                 <select id="service" name="service" required>
                   {SERVICE_OPTIONS.map((opt) => (
-                    <option key={opt || "empty"} value={opt}>
-                      {opt || "Select..."}
+                    <option key={opt.value || "empty"} value={opt.value}>
+                      {opt.value ? `${opt.emoji ? opt.emoji + " " : ""}${opt.value}` : "Select..."}
                     </option>
                   ))}
                 </select>

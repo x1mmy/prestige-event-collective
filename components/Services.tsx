@@ -7,7 +7,7 @@ import {
   MusicNoteIcon,
 } from "./ServiceIcons";
 
-const MARQUEE_ITEMS: { emoji: string; label: string }[] = [
+export const MARQUEE_ITEMS: { emoji: string; label: string }[] = [
   { emoji: "🎧", label: "DJs" },
   { emoji: "🎤", label: "MCs & Hosts" },
   { emoji: "🎷", label: "Live Bands" },
