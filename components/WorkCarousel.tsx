@@ -9,6 +9,13 @@ const VIDEOS = [
   "/videos/vid4.mp4",
   "/videos/vid5.mp4",
   "/videos/vid6.mp4",
+  "/videos/vid7.mp4",
+  "/videos/vid8.mp4",
+  "/videos/vid9.mp4",
+  "/videos/vid10.mp4",
+  "/videos/vid11.mp4",
+  "/videos/vid12.mp4",
+  "/videos/vid13.mp4",
 ];
 
 export function WorkCarousel() {
