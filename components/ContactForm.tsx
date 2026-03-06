@@ -7,9 +7,9 @@ const FORM_SERVICE_LABELS = [
   "",
   "DJ",
   "MCs & Hosts",
+  "Singers",
   "Live Musicians",
   "Live Bands",
-  "Slush Bands",
   "Zaffe Drummers",
   "Dancers & Dancefloor",
   "CO₂ FX",
@@ -29,10 +29,11 @@ const labelToEmoji: Record<string, string> = {
   "": "",
   "DJ": "🎧",
   "Event Security": "🚨",
+  "LED Sticks, Truss & Event Lighting": "🪩",
   "Neon Signs & more": "💡",
   "Other": "📋",
+  "Singers": "🎤",
   "Live Musicians": "🎷",
-  "Slush Bands": "🎸",
   ...Object.fromEntries(MARQUEE_ITEMS.map(({ label, emoji }) => [label, emoji])),
 };
 
