@@ -13,7 +13,7 @@ const FORM_SERVICE_LABELS = [
   "Zaffe Drummers",
   "Dancers & Dancefloor",
   "CO₂ FX",
-  "LED Screens & Lighting Design",
+  "LED Sticks, Truss & Event Lighting",
   "Photobooths & 360° Video",
   "Photo & Video Production",
   "Live Food Stations",
