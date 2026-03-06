@@ -8,26 +8,27 @@ import {
 } from "./ServiceIcons";
 
 export const MARQUEE_ITEMS: { emoji: string; label: string }[] = [
-  { emoji: "🎧", label: "DJs" },
+  { emoji: "🎧", label: "DJ" },
   { emoji: "🎤", label: "MCs & Hosts" },
-  { emoji: "🎷", label: "Live Bands" },
+  { emoji: "🎤", label: "Singers" },
+  { emoji: "🎷", label: "Live Musicians" },
+  { emoji: "🎸", label: "Live Bands" },
   { emoji: "🥁", label: "Zaffe Drummers" },
   { emoji: "💃", label: "Dancers & Dancefloor" },
   { emoji: "💨", label: "CO₂ FX" },
-  { emoji: "✨", label: "LED Screens & Lighting Design" },
-  { emoji: "🎆", label: "Special Effects" },
-  { emoji: "🎇", label: "Fireworks" },
+  { emoji: "🪩", label: "LED Sticks, Truss & Event Lighting" },
   { emoji: "📸", label: "Photobooths & 360° Video" },
   { emoji: "🎬", label: "Photo & Video Production" },
   { emoji: "🍔", label: "Live Food Stations" },
   { emoji: "🍸", label: "Professional Bartenders" },
+  { emoji: "🎆", label: "Special Effects" },
+  { emoji: "💡", label: "Neon Signs & more" },
   { emoji: "🎪", label: "Full Event Production" },
-  { emoji: "🛡️", label: "Event Security" },
-  { emoji: "💡", label: "Custom Neon Signs" },
+  { emoji: "🚨", label: "Event Security" },
 ];
 
-const MARQUEE_ROW1 = MARQUEE_ITEMS.slice(0, 8);
-const MARQUEE_ROW2 = MARQUEE_ITEMS.slice(8, 16);
+const MARQUEE_ROW1 = MARQUEE_ITEMS.slice(0, 9);
+const MARQUEE_ROW2 = MARQUEE_ITEMS.slice(9);
 
 const CARDS = [
   {
